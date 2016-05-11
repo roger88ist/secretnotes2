@@ -9,5 +9,6 @@ class SessionsController < ApplicationController
 
   	session[:user_id] = @user.id
   	redirect_to notes_path
+  	#this will break for now because there is not notes_path
   end
 end
